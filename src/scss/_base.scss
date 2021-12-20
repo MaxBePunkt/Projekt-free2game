@@ -1,0 +1,62 @@
+/* 
+##################################
+resets / variables / mixins / general classes
+##################################
+*/
+/* 
+Farben: 
+$background-color: #040F14;
+$background-color-light: #102130;
+$background-color-buttons: #FF4654;
+$font-color-cart: #AFC7DF;
+$background-color-search-dark: #375470;
+$font-main-color: #ffffff;
+*/
+$background-color: #040f14;
+$background-color-light: #102130;
+$background-color-buttons: #ff4654;
+$font-color-cart: #afc7df;
+$background-color-search-dark: #375470;
+$font-main-color: #ffffff;
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+$main-font: "Titillium Web", sans-serif;
+$head-font: "Oswald", sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  font-family: $main-font;
+  color: $font-main-color;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $background-color;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $head-font;
+}
+h1 {
+  font-size: 3rem;
+}
