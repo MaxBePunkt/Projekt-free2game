@@ -11,8 +11,6 @@ import Detail from "./pages/Detail";
 function App() {
   return (
     <div className="App">
-      <h1>123</h1>
-      <h2>Hallo</h2>
       <Router>
         <Nav />
         <Routes>
