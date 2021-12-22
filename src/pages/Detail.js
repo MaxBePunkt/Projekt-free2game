@@ -10,7 +10,9 @@ class Detail extends Component {
             isLoading: false,
             gameData: [],
             systemReq: [],
-            screenshots: [],
+            screenshots1: [],
+            screenshots2: [],
+            screenshots3: [],
         }
     }
 
@@ -31,7 +33,14 @@ class Detail extends Component {
                 });
                 this.setState({ systemReq: data.minimum_system_requirements }, () => {
                 });
-                this.setState({ screenshots: data.screenshots }, () => {
+                this.setState({ screenshots1: data.screenshots[0].image }, () => {
+                    console.log(this.state.screenshots1)
+                });
+                this.setState({ screenshots2: data.screenshots[1].image }, () => {
+                    console.log(this.state.screenshots2)
+                });
+                this.setState({ screenshots3: data.screenshots[2].image }, () => {
+                    console.log(this.state.screenshots3)
                 });
             })
             .catch((err) => console.log(err));
@@ -52,9 +61,9 @@ class Detail extends Component {
                     genre={this.state.gameData.genre}
                     description={this.state.gameData.description}
                     game_url={this.state.gameData.game_url}
-                    //image1={this.state.screenshots[0].image}
-                    //image2={this.state.screenshots[1].image}
-                    //image3={this.state.screenshots[2].image}
+                    image1={this.state.screenshots1}
+                    image2={this.state.screenshots2}
+                    image3={this.state.screenshots3}
                     developer={this.state.gameData.developer}
                     publisher={this.state.gameData.publisher}
                     release_date={this.state.gameData.release_date}
