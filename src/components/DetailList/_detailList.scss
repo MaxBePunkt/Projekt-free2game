@@ -82,3 +82,26 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    .sectionDetail {
+      display: block;
+      h1 {
+        margin: 5% 0 2% 9%;
+      }
+      .imgNoDrei {
+        width: 80%;
+        margin: 0 0 5% 5%;
+      }
+      .imgNoVier {
+        width: 80%;
+        margin: 0 0% 10% 5%;
+      }
+      .thirdArticleGrid {
+        margin:0 0 5vh 0%;
+        padding-right: 15%;
+      }
+      }
+      }
+    }

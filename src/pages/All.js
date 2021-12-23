@@ -32,6 +32,19 @@ class All extends Component {
         <header>
           <h1>All Games</h1>
         </header>
+        <div className="container">
+          <input type="checkbox" class="myinput" />
+          <label htmlFor="">RPG</label>
+          <input type="checkbox" class="myinput" />
+          <label htmlFor="">MMO</label>
+          <input type="checkbox" class="myinput" />
+          <label htmlFor="">MMORPG</label>
+          <input type="checkbox" class="myinput" />
+          {/* <input type="checkbox" name="test"  checked="checked" id="test" className="checkBox" />
+          <input type="checkbox" name="test"  checked="checked" id="test" className="checkBox" /> */}
+          <span className="checkmark"></span>
+          MMORPG
+        </div>
         <section className="items-wrap">
           {this.state.Data.map((elt) => (
             <ListItemLong

@@ -6,6 +6,7 @@ class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
   }
   showSettings() {
     let menu = document.querySelector(".sidebar-nav");

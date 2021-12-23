@@ -79,3 +79,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    .items-wrap {
+      display: block;
+      .listItemLong {      
+        width: 70%;
+        margin: 20vh 0 20vh 5vw;
+          }
+        }
+      }
+    }
+
